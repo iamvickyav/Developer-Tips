@@ -1,28 +1,3 @@
 # Developer-Tips
 
-## Tip 1 - For deploying Spring Boot App in Standalone Tomcat
-To deploy applications developed in Spring boot in standalone tomcat, following changes needs to be done
-
-#### In Main Class
-```java
-public class SimpleRestApp extends SpringBootServletInitializer {
-
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-         return application.sources(SimpleRestApp.class);
-    }
-
-    public static void main(String[] args) {
-         SpringApplication.run(SimpleRestApp.class, args);
-    }
-}
-```
-#### In pom.xml
-```xml
-<packaging>war</packaging>
-
-<build>
-  <finalName>SimpleRestApp</finalName>
-    ....
-</build>
-```
+## [Tip 1 - Deploying Spring Boot App in Standalone Tomcat](https://github.com/iamvickyav/Developer-Tips/blob/master/Deploy-SpringBootApp-In-Tomcat.md)
