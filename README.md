@@ -11,3 +11,7 @@
 ## Docker Related
 
 ### [Tip 3 - docker-compose.yml one stop reference](https://github.com/iamvickyav/Developer-Tips/blob/master/docker-compose-one-stop.md)
+
+## Hibernate & Spring Data Related
+
+### [Tip 4 - Hibernate/SpringData General issues & fixes](https://github.com/iamvickyav/Developer-Tips/blob/master/Hibernate-Springdata-Issues-Fixes.md)
