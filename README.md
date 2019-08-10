@@ -8,4 +8,6 @@
 
 ### [Tip 2 - Adding Admin User in Tomcat](https://github.com/iamvickyav/Developer-Tips/blob/master/Configure-admin-user-in-tomcat.md)
 
-### [Tip 3 - Adding Admin User in Tomcat](https://github.com/iamvickyav/Developer-Tips/blob/master/Configure-admin-user-in-tomcat.md)
+## Docker Related
+
+### [Tip 3 - docker-compose.yml one stop reference](https://github.com/iamvickyav/Developer-Tips/blob/master/docker-compose-one-stop.md)
