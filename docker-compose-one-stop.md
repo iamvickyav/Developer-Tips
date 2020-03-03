@@ -38,3 +38,42 @@ services:
     volumes:
       - ./solr_cores/IndianTowns:/opt/solr/server/solr/IndianTowns
 ```
+
+### Dockerfile for Tomcat
+
+```
+FROM tomcat:latest
+ADD sample.war /usr/local/tomcat/webapps/
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
+```
+
+#### Commands to build & run image from above Dockerfile
+> docker build -t sample .
+
+> docker run -p 8080:8080 sample
+
+
+#### Docker command to check logs
+
+First list the docker containers running currently 
+
+> docker ps
+
+Now copy container id from the above command's result
+
+> docker logs <container-id copied from above command>
+
+#### Docker command to check tomcat logs 
+
+start bash inside Docker container
+
+> docker exec -it <container-id> bash
+  
+In bash, navigate to tomcat logs folder 
+
+> cd /usr/local/tomcat/logs/
+  
+Now tail the log files to get application log
+
+> tail -f <log-file-name.log>
