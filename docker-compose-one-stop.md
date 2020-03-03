@@ -51,6 +51,8 @@ CMD ["catalina.sh", "run"]
 #### Commands to build & run image from above Dockerfile
 > docker build -t sample .
 
+* Don't miss the . (dot) in above command
+
 > docker run -p 8080:8080 sample
 
 
